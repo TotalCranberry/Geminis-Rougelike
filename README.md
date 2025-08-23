@@ -27,60 +27,58 @@ Welcome to Gemini's Roguelike: The Princess's Last Hope! This is an isometric du
 To run Gemini's Roguelike, you'll need Python 3 and a few libraries.
 
 Prerequisites
-Python 3.x
-
-pygame
-
-moviepy (for the victory video, though it's optional if you remove the video playback code)
+  Python 3.x
+  
+  pygame
+  
+  moviepy (for the victory video, though it's optional if you remove the video playback code)
 
 Steps
-Clone the Repository:
-
-git clone https://github.com/TotalCranberry/Geminis-Rougelike.git
-cd Geminis-Rougelike
-
-(Replace your-username with your actual GitHub username)
-
-Install Dependencies:
-
-pip install pygame moviepy
-
-Prepare Assets:
-Ensure you have an assets folder in the root directory of the project, containing all the necessary image and audio files as referenced in game.py.
-
-player.png, goblin.png, slime.png, bat.png, skeleton.png, potion.png, chest.png, floor.png, wall.png, stairs.png, barrel.png, crate.png, torch.png, sword.png, shield.png, armor.png, staff.png, inventory_slot.png, fireball.png, arrow.png, bow.png, gargoyle.png, fenrir.png, chimera.png, hydra.png, dragon.png, princess.png, key.png, door.png, menu.png.
-
-victory.mov (optional, for the victory video playback).
-
-bg_music.mp3 (or .ogg, for background music).
-
-Run the Game:
-
-python game.py
+  Clone the Repository:
+  
+  git clone https://github.com/TotalCranberry/Geminis-Rougelike.git
+  cd Geminis-Rougelike
+  
+  Install Dependencies:
+  
+  pip install pygame moviepy
+  
+  Prepare Assets:
+  Ensure you have an assets folder in the root directory of the project, containing all the necessary image and audio files as referenced in game.py.
+  
+  player.png, goblin.png, slime.png, bat.png, skeleton.png, potion.png, chest.png, floor.png, wall.png, stairs.png, barrel.png, crate.png, torch.png,   sword.png, shield.png, armor.png, staff.png, inventory_slot.png, fireball.png, arrow.png, bow.png, gargoyle.png, fenrir.png, chimera.png, hydra.png, dragon.png, princess.png, key.png, door.png, menu.png.
+  
+  victory.mov (optional, for the victory video playback).
+  
+  bg_music.mp3 (or .ogg, for background music).
+  
+  Run the Game:
+  
+  python game.py
 
 🎮 How to Play
-Controls:
-Movement: Arrow Keys or HJKL
-
-Pick Up Item: G
-
-Use/Equip Item: 1 - 9 (corresponding to inventory slots)
-
-Descend Stairs: .  (Period)
-
-Use Magic/Ranged (Targeting Mode): F
-
-Move Target: Arrow Keys
-
-Confirm Target: Enter
-
-Cancel Targeting: Escape
-
-Toggle Help Menu: / (Slash)
-
-Quit Game (from Menu/Game Over): ESC
-
-Restart Game (from Game Over/Victory): R
+  Controls:
+  Movement: Arrow Keys or HJKL
+  
+  Pick Up Item: G
+  
+  Use/Equip Item: 1 - 9 (corresponding to inventory slots)
+  
+  Descend Stairs: .  (Period)
+  
+  Use Magic/Ranged (Targeting Mode): F
+  
+  Move Target: Arrow Keys
+  
+  Confirm Target: Enter
+  
+  Cancel Targeting: Escape
+  
+  Toggle Help Menu: / (Slash)
+  
+  Quit Game (from Menu/Game Over): ESC
+  
+  Restart Game (from Game Over/Victory): R
 
 Objective:
 Navigate through multiple dungeon levels, defeat the level boss to reveal the stairs, and ultimately confront the dragon on the final level to rescue the princess! Explore the map to find keys, unlock doors, and uncover hidden items.
