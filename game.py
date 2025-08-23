@@ -1007,7 +1007,7 @@ def main():
     BOSS_MUSIC = load_music('assets/boss.mp3')
     DRAGON_MUSIC = load_music('assets/dragon.mp3')
 
-    fighter_component = Fighter(1000, 1, 50, mana=20)
+    fighter_component = Fighter(200, 5, 20, mana=20)
     inventory_component = Inventory(None, INVENTORY_CAPACITY)
     equipment_component = Equipment(None)
     player = GameObject(0, 0, 'player', True, fighter_component, light_source=LightSource(radius=8))
