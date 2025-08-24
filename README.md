@@ -1,108 +1,106 @@
-Gemini's Roguelike: Built with Gemini & Whisk
+# Gemini's Roguelike: Built with Gemini & Whisk
 
-Welcome to Gemini's Roguelike: The Princess's Last Hope! This isometric dungeon-crawling adventure game was primarily developed with the assistance of Gemini, an AI tool, and Whisk for rapid prototyping and iterative development, utilizing the Pygame library. Embark on a perilous journey through dangerous dungeons, battle fearsome monsters, and solve puzzles to rescue the kidnapped princess from the clutches of evil.
+Welcome to **Gemini's Roguelike: The Princess's Last Hope**! This isometric dungeon-crawling adventure game was primarily developed with the assistance of **Gemini**, an AI tool, and **Whisk** for rapid prototyping and iterative development, utilizing the Pygame library. Embark on a perilous journey through dangerous dungeons, battle fearsome monsters, and solve puzzles to rescue the kidnapped princess from the clutches of evil.
 
-✨ Features
--Isometric Graphics: Explore a visually distinct dungeon environment.
+---
 
--Procedural Level Generation: Each playthrough offers a new map layout.
+## ✨ Features
 
--Character Progression: Level up your hero, gain new abilities, and find powerful equipment.
+* **Isometric Graphics:** Explore a visually distinct dungeon environment.
+* **Procedural Level Generation:** Each playthrough offers a new map layout.
+* **Character Progression:** Level up your hero, gain new abilities, and find powerful equipment.
+* **Tactical Combat:** Engage in turn-based battles against a variety of monsters.
+* **Inventory & Equipment System:** Manage your gear and adapt to dungeon challenges.
+* **Field of View & Lighting:** Dynamic lighting system adds to the atmospheric exploration.
+* **Boss Battles:** Face off against unique and challenging bosses at the end of each level.
+* **Dialogue System:** Interact with characters and unravel the story (developed with Gemini's assistance).
+* **Background Music:** Immerse yourself in the adventure with captivating background music (integrated with Gemini's guidance).
 
--Tactical Combat: Engage in turn-based battles against a variety of monsters.
+---
 
--Inventory & Equipment System: Manage your gear and adapt to dungeon challenges.
+## 🚀 Installation
 
--Field of View & Lighting: Dynamic lighting system adds to the atmospheric exploration.
-
--Boss Battles: Face off against unique and challenging bosses at the end of each level.
-
--Dialogue System: Interact with characters and unravel the story (developed with Gemini's assistance).
-
--Background Music: Immerse yourself in the adventure with captivating background music (integrated with Gemini's guidance).
-
-🚀 Installation
 To run Gemini's Roguelike, you'll need Python 3 and a few libraries. The game's core logic and enhancements were largely guided by AI, making development efficient.
 
-Prerequisites
--Python 3.x
+### Prerequisites
 
--pygame
+* Python 3.x
+* `pygame`
+* `moviepy` (for the victory video, though it's optional if you remove the video playback code)
 
--moviepy (for the victory video, though it's optional if you remove the video playback code)
+### Steps
 
-Steps
-1.Clone the Repository:
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/TotalCranberry/Geminis-Rougelike.git
+    cd Geminis-Rougelike
+    ```
 
-  git clone https://github.com/TotalCranberry/Geminis-Rougelike.git
-  cd Geminis-Rougelike
+2.  **Install Dependencies:**
+    ```bash
+    pip install pygame moviepy
+    ```
 
-2.Install Dependencies:
+3.  **Prepare Assets:**
+    Ensure you have an `assets` folder in the root directory of the project, containing all the necessary image and audio files as referenced in `game.py`.
+    * `player.png`, `goblin.png`, `slime.png`, `bat.png`, `skeleton.png`, `potion.png`, `chest.png`, `floor.png`, `wall.png`, `stairs.png`, `barrel.png`, `crate.png`, `torch.png`, `sword.png`, `shield.png`, `armor.png`, `staff.png`, `inventory_slot.png`, `fireball.png`, `arrow.png`, `bow.png`, `gargoyle.png`, `fenrir.png`, `chimera.png`, `hydra.png`, `dragon.png`, `princess.png`, `key.png`, `door.png`, `menu.png`.
+    * `victory.mov` (optional, for the victory video playback).
+    * `bg_music.mp3` (or `.ogg`, for background music).
 
-  pip install pygame moviepy
+4.  **Run the Game:**
+    ```bash
+    python game.py
+    ```
 
-3.Prepare Assets:
-Ensure you have an assets folder in the root directory of the project, containing all the necessary image and audio files as referenced in game.py.
+---
 
--player.png, goblin.png, slime.png, bat.png, skeleton.png, potion.png, chest.png, floor.png, wall.png, stairs.png, barrel.png, crate.png, torch.png, sword.png, shield.png, armor.png, staff.png, inventory_slot.png, fireball.png, arrow.png, bow.png, gargoyle.png, fenrir.png, chimera.png, hydra.png, dragon.png, princess.png, key.png, door.png, menu.png.
+## 🎮 How to Play
 
--victory.mov (optional, for the victory video playback).
+### Controls:
 
--bg_music.mp3 (or .ogg, for background music).
+* **Movement:** `Arrow Keys` or `HJKL`
+* **Pick Up Item:** `G`
+* **Use/Equip Item:** `1` - `9` (corresponding to inventory slots)
+* **Descend Stairs:** `. ` (Period)
+* **Use Magic/Ranged (Targeting Mode):** `F`
+    * Move Target: `Arrow Keys`
+    * Confirm Target: `Enter`
+    * Cancel Targeting: `Escape`
+* **Toggle Help Menu:** `/` (Slash)
+* **Quit Game (from Menu/Game Over):** `ESC`
+* **Restart Game (from Game Over/Victory):** `R`
 
-4.Run the Game:
+### Objective:
 
-  python game.py
-
-🎮 How to Play
-Controls:
--Movement: Arrow Keys or HJKL
-
--Pick Up Item: G
-
--Use/Equip Item: 1 - 9 (corresponding to inventory slots)
-
--Descend Stairs: .  (Period)
-
--Use Magic/Ranged (Targeting Mode): F
-
---Move Target: Arrow Keys
-
---Confirm Target: Enter
-
---Cancel Targeting: Escape
-
--Toggle Help Menu: / (Slash)
-
--Quit Game (from Menu/Game Over): ESC
-
--Restart Game (from Game Over/Victory): R
-
-Objective:
 Navigate through multiple dungeon levels, defeat the level boss to reveal the stairs, and ultimately confront the dragon on the final level to rescue the princess! Explore the map to find keys, unlock doors, and uncover hidden items.
 
-🎨 Assets
-All game sprites and sound files are expected to be located in the assets/ directory. If any asset files are missing, the game may display a placeholder or encounter errors.
+---
 
-🤝 Contributing
+## 🎨 Assets
+
+All game sprites and sound files are expected to be located in the `assets/` directory. If any asset files are missing, the game may display a placeholder or encounter errors.
+
+---
+
+## 🤝 Contributing
+
 Contributions are welcome! If you have suggestions for improvements, bug fixes, or new features, please feel free to:
 
--Fork the repository.
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/your-feature-name`).
+3.  Make your changes.
+4.  Commit your changes (`git commit -m 'Add new feature'`).
+5.  Push to the branch (`git push origin feature/your-feature-name`).
+6.  Open a Pull Request.
 
--Create a new branch (git checkout -b feature/your-feature-name).
+---
 
--Make your changes.
+## 📜 License
 
--Commit your changes (git commit -m 'Add new feature').
+This project is open-source and available under the [MIT License](LICENSE).
 
--Push to the branch (git push origin feature/your-feature-name).
+---
 
--Open a Pull Request.
+## ✉️ Contact
 
-📜 License
-This project is open-source and available under the MIT License.
-
-✉️ Contact
 For any questions or feedback, please open an issue on the GitHub repository.
-
-
